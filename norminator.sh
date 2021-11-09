@@ -6,7 +6,7 @@
 #    By: tmoret <marvin@42lausanne.ch>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/09 18:27:22 by tmoret            #+#    #+#              #
-#    Updated: 2021/11/09 21:33:46 by tmoret           ###   ########.fr        #
+#    Updated: 2021/11/09 22:27:06 by tmoret           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,6 +37,8 @@ gsed -i 's/\s!=\s/CGM48/g' tempo2
 gsed -i 's/=/ = /g' tempo2
 gsed -i 's/BNK48/ = /g' tempo2
 gsed -i 's/CGM48/ != /g' tempo2
+gsed -i 's/" ,"/,/g' tempo2
+gsed -i 's/while(/while (/g' tempo2
 
 # reconstitue le fichier
 cat tempo tempo2 > $1

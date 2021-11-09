@@ -14,13 +14,13 @@
 #include <stdlib.h>
 #include <string.h>
 
-int affiche(int *tableau, int tailleTableau)
+int affiche(int *tableau, int taille_tableau)
 {
   int valeur;
   int i;
   valeur = 0;
   i=0;
-  while(i != tailleTableau )
+  while(i != taille_tableau )
   {
     valeur = valeur + tableau[i];
     ++i;
@@ -30,20 +30,20 @@ int affiche(int *tableau, int tailleTableau)
 
 int main(int argc, char *argv[])
 {
-  int tailleTableau;
-  int tableau[tailleTableau];
+  int taille_tableau;
+  int tableau[taille_tableau];
   int i;
-  int sommeTotal;
+  int somme_total;
 
-  tailleTableau = argc - 1;
+  taille_tableau = argc - 1;
   
   i=0;
-  while (i != tailleTableau )
+  while (i != taille_tableau )
   {
     tableau[i] = atoi(argv[i +1]);
     printf("tableau[%i] : %i\n", i, tableau[i]);
     ++i;
   }
-  sommeTotal = affiche(tableau , tailleTableau);
-  printf("la somme total : %i\n", sommeTotal);
+  somme_total = affiche(tableau , taille_tableau);
+  printf("la somme total : %i\n", somme_total);
 }
