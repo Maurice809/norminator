@@ -13,7 +13,9 @@ Installer gsed
 ```sh
 brew install gesd
 ```
-
+Puis lancer la command
+```sh
 Usage : norminator.sh < fichier.c >
+```
 
 Attention il faut un header 42 en debut de fichier
