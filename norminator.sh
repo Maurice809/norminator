@@ -6,7 +6,7 @@
 #    By: tmoret <marvin@42lausanne.ch>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/09 18:27:22 by tmoret            #+#    #+#              #
-#    Updated: 2021/11/09 23:18:13 by tmoret           ###   ########.fr        #
+#    Updated: 2021/11/15 19:29:08 by tmoret           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,3 +51,5 @@ echo "}" >> tempo2
 # reconstitue le fichier
 cat tempo tempo2 > $1
 
+# destruction des fichier temporaire
+rm tempo tempo2
