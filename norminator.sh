@@ -6,7 +6,7 @@
 #    By: tmoret <marvin@42lausanne.ch>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/09 18:27:22 by tmoret            #+#    #+#              #
-#    Updated: 2021/11/16 15:52:58 by tmoret           ###   ########.fr        #
+#    Updated: 2021/11/16 16:08:33 by tmoret           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,7 +42,7 @@ gsed -i 's/(char\s/(char /g' tempo2
 gsed -i 's/int\s/int\t/g' tempo2
 gsed -i 's/,\sint\t/, int /g' tempo2
 gsed -i 's/int\targc/int argc/g' tempo2
-gsed -i 's/(int\s/(int /g' tempo2
+gsed -i 's/(int\t/(int /g' tempo2
 
 # remplace les pranthese
 gsed -i 's/(\s/(/g' tempo2
