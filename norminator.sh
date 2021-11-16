@@ -6,7 +6,7 @@
 #    By: tmoret <marvin@42lausanne.ch>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/09 18:27:22 by tmoret            #+#    #+#              #
-#    Updated: 2021/11/16 16:08:33 by tmoret           ###   ########.fr        #
+#    Updated: 2021/11/16 17:09:20 by tmoret           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,7 +53,11 @@ gsed -i 's/\s=\s/BNK48/g' tempo2
 gsed -i 's/\s!=\s/CGM48/g' tempo2
 gsed -i 's/s\==\s/AKK48/g' tempo2
 gsed -i 's/==/STU48/g' tempo2
+gsed -i 's/s\<=\s/HKT48/g' tempo2
+gsed -i 's/<=/SGO48/g' tempo2
 gsed -i 's/=/ = /g' tempo2
+gsed -i 's/HKT48/ <= /g' tempo2
+gsed -i 's/SGO48/ <= /g' tempo2
 gsed -i 's/BNK48/ = /g' tempo2
 gsed -i 's/CGM48/ != /g' tempo2
 gsed -i 's/AKB48/ == /g' tempo2
