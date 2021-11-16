@@ -6,7 +6,7 @@
 #    By: tmoret <marvin@42lausanne.ch>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/09 18:27:22 by tmoret            #+#    #+#              #
-#    Updated: 2021/11/15 20:48:11 by tmoret           ###   ########.fr        #
+#    Updated: 2021/11/16 15:52:58 by tmoret           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,10 +26,23 @@ gsed -i '12,$!d' tempo2
 # remplace 2 espace par un tab
 gsed -i 's/\s\s/\t/g' tempo2
 
+# ajoute le void dans le main()
+gsed -i 's/int\smain()/int main(void)/g' tempo2
+
+# remplace le return(0)
+gsed -i 's/return(0)/return (0)/g' tempo2
+
+# remplace le char space par char tab
+gsed -i 's/char\s/char\t/g' tempo2
+gsed -i 's/,\schar\t/, char /g' tempo2
+gsed -i 's/char\targc/char argc/g' tempo2
+gsed -i 's/(char\s/(char /g' tempo2
+
 # remplace le int space par int tab
 gsed -i 's/int\s/int\t/g' tempo2
 gsed -i 's/,\sint\t/, int /g' tempo2
 gsed -i 's/int\targc/int argc/g' tempo2
+gsed -i 's/(int\s/(int /g' tempo2
 
 # remplace les pranthese
 gsed -i 's/(\s/(/g' tempo2
